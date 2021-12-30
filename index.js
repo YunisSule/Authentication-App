@@ -105,6 +105,7 @@ function logout() {
     .catch((e) => {
       alert('Internal server error!');
     });
+  window.location.reload();
 }
 // Logout ends
 
