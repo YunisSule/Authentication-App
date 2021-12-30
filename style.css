@@ -1,0 +1,11 @@
+.hide-element {
+  display: none;
+}
+
+#login-container {
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 2px #ccc;
+}
