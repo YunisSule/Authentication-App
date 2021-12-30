@@ -14,6 +14,6 @@ CREATE TABLE IF NOT EXISTS `user_data`
     address     varchar(50) NOT NULL,
     city        varchar(50) NOT NULL,
     postal_code varchar(50) NOT NULL,
-    PRIMARY KEY (username)
+    PRIMARY KEY (username),
     FOREIGN KEY (username) REFERENCES `users` (username) ON DELETE CASCADE
 );
