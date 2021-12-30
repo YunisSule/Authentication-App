@@ -7,12 +7,13 @@ CREATE TABLE IF NOT EXISTS `users`
 
 CREATE TABLE IF NOT EXISTS `user_data`
 (
-    username    varchar(50) UNIQUE NOT NULL,
+    username    varchar(50) NOT NULL,
     firstname   varchar(50) NOT NULL,
     lastname    varchar(50) NOT NULL,
     email       varchar(50) NOT NULL,
     address     varchar(50) NOT NULL,
     city        varchar(50) NOT NULL,
     postal_code varchar(50) NOT NULL,
+    PRIMARY KEY (username)
     FOREIGN KEY (username) REFERENCES `users` (username) ON DELETE CASCADE
 );
